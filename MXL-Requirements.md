@@ -58,7 +58,7 @@ Each of the requirements below is assigned to one of three phases:
 |Section|Description|Requirements|Phase|Met|
 |:---|:---|:---|:---|:---|
 |3.2.1|Progressive video|All video essences exchanged within the platform feature progressive scan. System input and output functions that connect to the outside world may support interlaced scan formats, but all video exchanged among functions within the Media Exchange Layer shall be progressive.|1|${\color{green}YES}$|
-|3.2.2|1080p|Video Raster Format: Full HD 1920x1080, progressive scan of a single frame rate.|1|${\color{green}YES}|
+|3.2.2|1080p|Video Raster Format: Full HD 1920x1080, progressive scan of a single frame rate.|1|${\color{green}YES}$|
 |3.2.3|Mixed frame rates|Video Raster Format: Multiple different Frame Rates shall be supported within a single system.|2|${\color{green}YES}$|
 |3.2.4|Video Raster Format: UHD4K| 3860x2160, progressive scan|3|${\color{green}YES}$|
 |3.2.5||Video Raster Format: Any H x V raster, progressive scan|3|${\color{green}YES}$|
