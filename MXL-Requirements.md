@@ -13,7 +13,7 @@ Each of the requirements below is assigned to one of three phases:
 * **Phase 2:** First Release are high-priority features to be added immediately after the MVP
 * **Future Phases:** To be implemented based on newly identified requirements and findings from initial testing
 
-## 1. SDK Basics
+## 1. [SDK Basics, #20](https://github.com/dmf-mxl/mxl-requirements/issues/20)
 
 |Section|Description|Requirements|Phase|Issue#| 
 |:---|:---|:---|:---|:---|
@@ -26,7 +26,7 @@ Each of the requirements below is assigned to one of three phases:
 |1.7|Sample Media Functions|The SDK should contain a Sample Media Function which includes calls to the Media Exchange and interaction with NMOS IS-04 Registry and IS-05 Connection Management.|1|[#28](https://github.com/dmf-mxl/mxl-requirements/issues/28)|
 |1.8|Test Tools|The SDK should contain a Test Tool to test the implementation of a Media Functions calls to the Media Exchange's APIs|1|[#29](https://github.com/dmf-mxl/mxl-requirements/issues/29)|
 
-## 2. Media Exchange via Shared Memory
+## 2. [Media Exchange via Shared Memory, #30](https://github.com/dmf-mxl/mxl-requirements/issues/30)
 
 |Section|Description|Requirements|Phase|Issue#|
 |:---|:---|:---|:---|:---|
@@ -43,7 +43,7 @@ Each of the requirements below is assigned to one of three phases:
 |2.11|Memory isolation from kernel|The Media Exchange SDK shall allow for shared memory isolation between the memory used by Media Functions and the memory used by the kernel of the host.|2|[#41](https://github.com/dmf-mxl/mxl-requirements/issues/41)|
 |2.12|Memory isolation between segments of Media Functions|The Media Exchange SDK shall allow for multiple shared memory spaces to segment groups of Media Functions that need to be kept separated. <br> These multiple shared memory spaces would be isolated from one another and the host to maintain the integrity of the system if one memory space has a critical failure.|2|[#42](https://github.com/dmf-mxl/mxl-requirements/issues/42)|
 
-## 3. Media Buffer Data Model
+## 3. [Media Buffer Data Model, #43](https://github.com/dmf-mxl/mxl-requirements/issues/43) 
 
 ### 3.1 General grain Requirements
 |Section|Description|Requirements|Phase|Issue#|
@@ -81,7 +81,7 @@ Each of the requirements below is assigned to one of three phases:
 |${\color{red}3.4.1}$|TTML subtitling|Captioning/Subtitling Data formatted as TTML (Time Text Markup Language)|2|[#62](https://github.com/dmf-mxl/mxl-requirements/issues/62)|
 |3.4.2|SCTE|Other Timed Metadata: SCTE Triggers formatted as JSON or other data representation.|3|[#63](https://github.com/dmf-mxl/mxl-requirements/issues/63)|
 
-## 4. Grain Identity, Format Description and Timing
+## 4. [Grain Identity, Format Description and Timing, #64](https://github.com/dmf-mxl/mxl-requirements/issues/64)
 |Section|Description|Requirements|Phase|Issue#|
 |:---|:---|:---|:---|:---|
 |4.1|Flow has flow ID|Flow ID: Flow includes a unique ID for the media essence flow. All grains corresponding to the same essence flow have the same Flow ID.|1|[#65](https://github.com/dmf-mxl/mxl-requirements/issues/65)|
@@ -91,7 +91,7 @@ Each of the requirements below is assigned to one of three phases:
 |4.5|User-defined timestamps|Each Grain may include additional "User-Defined" timestamps. These additional timestamps could be based on an incoming external signal's timestamps or derived by applying a user-defined offset to the Platform Entry timestamp to account for known upstream latency to capture the actual time of origin of a source.|3|[#69](https://github.com/dmf-mxl/mxl-requirements/issues/69)|
 |4.6|User-defined metadata|Each Grain may include additional user-definable meta data fields to allow vendors to add additional functionality or capabilities|3|[#70](https://github.com/dmf-mxl/mxl-requirements/issues/70)|
 
-## 5. Flow Creation and Media Write / Read Functions
+## 5. [Flow Creation and Media Write / Read Functions, #71](https://github.com/dmf-mxl/mxl-requirements/issues/71)
 |Section|Description|Requirements|Phase|Issue#|
 |:---|:---|:---|:---|:---|
 |5.1|CREATE Flow|Media Exchange SDK provides a function to CREATE (instantiate) a media essence flow. <br> The creation of the media flow allocates a set of buffers in shared memory. It adds the flow to the Media Exchange Layer's Flow Memory Address Table, creating a link between the Flow ID and the memory location. <br> The Create function returns the Flow ID to the Media Function. The returned Flow ID could be used to register the flow in an NMOS Registry.|1|[#72](https://github.com/dmf-mxl/mxl-requirements/issues/72)|
@@ -99,7 +99,7 @@ Each of the requirements below is assigned to one of three phases:
 |${\color{red}5.3}$|UPDATE Flow|Media Exchange SDK provides a function to UPDATE (write) media to a flow specifying the flow ID. <br> Each call to the UPDATE function writes a single Media Grain (Grain).|1|[#74](https://github.com/dmf-mxl/mxl-requirements/issues/74)|
 |5.4|DELETE Flow|Media Exchange SDK provides a function to DELETE a media essence flow. <br> The deletion of the media flow destroys the buffers and releases the memory that had been used for the flow and removes the flow from from the Media Exchange Layer's flow table|1|[#75](https://github.com/dmf-mxl/mxl-requirements/issues/75)|
 
-## 6. Security Considerations
+## 6. [Security Considerations, #76](https://github.com/dmf-mxl/mxl-requirements/issues/76)
 |Section|Description|Requirements|Phase|Issue#|
 |:---|:---|:---|:---|:---|
 |${\color{red}6.1}$|authentication / authorization|All Media Exchange Layer APIs support mandatory authentication / authorization using OAuth 2.0 / JSON Web Token (JWT)|2|[#77](https://github.com/dmf-mxl/mxl-requirements/issues/77)|
