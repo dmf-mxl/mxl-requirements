@@ -1,6 +1,6 @@
 # License
 
-The charter (https://github.com/dmf-mxl/mxl/blob/main/GOVERNANCE/CHARTER.pdf) defines that documentation will be made available as CC BY 4.0 in chapter 8.B.IV.
+Chapter 8.b.iv of the Charter (https://github.com/dmf-mxl/mxl/blob/main/GOVERNANCE/CHARTER.pdf) specifiea that documentation will be made available as CC BY 4.0.
 All the requirements defined in this repository are seen as documentation of the project. 
 
 This work is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
