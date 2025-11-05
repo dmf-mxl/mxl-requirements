@@ -1,4 +1,8 @@
-Draft for discussion. 
+
+This document demonstrates the initial requirements from the EBU Dynamic Media Facility (DMF) working group.
+The latest state of the Requirements is to be found at the [Requirements Project Board](https://github.com/orgs/dmf-mxl/projects/5).
+
+## Initial Requirements 
 
 Color in the Section column
 * ${\color{red}Red}$ = there is a between the user requirement and what the TSC as done or is planning to do. At the end there is a list that put more context on those differences. These items needs to be reviewed by the RC
