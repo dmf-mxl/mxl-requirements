@@ -1,6 +1,6 @@
 ---
-name: MXL Requirement
-about: Covers a potential Requirement to be discussed in the REQ meeting
+name: MXL RC Meeting - Requirement
+about: Covers a potential Requirement to be discussed in the RC meeting
 title: "[REQ] "
 labels: ''
 assignees: ''

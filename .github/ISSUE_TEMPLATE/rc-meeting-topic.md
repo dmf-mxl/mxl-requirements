@@ -1,5 +1,5 @@
 ---
-name: RC Meeting Topic
+name: MXL RC Meeting - Topic
 about: Covers a topic to be discussed in the RC weekly meeting
 title: "[RC] "
 labels: ''
